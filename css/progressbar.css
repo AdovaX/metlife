@@ -1,0 +1,84 @@
+.checkout-wrap{
+    width: 100%;
+}
+
+.checkout-wrap ul{
+    margin-left: 100px !important;
+}
+
+.checkout-bar{
+    counter-reset: step;
+}
+
+.checkout-bar li{
+    list-style-type: none;
+    float: left;
+    width: 25%;
+    position: relative!important;
+    text-align: center;
+    margin-top: 15px;
+    margin-right: 12px;
+}
+
+.checkout-bar li:before{
+content: counter(step);
+    counter-increment: step;
+    width: 38px;
+    height: 34px;
+    line-height: 31px;
+    border: 1px solid #ddd;
+    display: block;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    margin: 0 auto 15px auto;
+    border-radius: 21px;
+    background-color: #999999;
+}
+
+/*progressbar connectors*/
+.checkout-bar li:after{
+    content: '';
+    position: absolute!important;
+    width: 100%;
+    height: 3px;
+    background-color: #ddd;
+    top: 15px;
+    left: -50%;
+    z-index: -1; /*put the connector behind the number*/
+}
+
+/*Remove the connector before the first status*/
+.checkout-bar li:first-child:after{
+    content: none;
+}
+
+/*Marking active blue*/
+.checkout-bar li.active{
+    color: #57aed1;
+}
+
+.checkout-bar li.active:before{
+    border-color: #57aed1;
+    background-color: #57aed1;
+}
+
+.checkout-bar li.active + li:after{
+    background-color: #57aed1;
+}
+
+/*Marking completed green*/
+.checkout-bar li.completed{
+    color: #8bc53f;
+}
+
+.checkout-bar li.completed:before{
+    border-color: #8bc53f;
+    background-color: #8bc53f;
+}
+
+.checkout-bar li.completed + li:after{
+    background-color: #8bc53f;
+}
+
+

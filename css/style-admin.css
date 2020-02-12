@@ -1,0 +1,109 @@
+/*!
+ * MetLife Insurance Html Template 2016
+ * Description: Insurance Html Template
+ * Author: iGlyphic
+ * Author URI:
+ * Copyright (c) 2016 iGlyphic
+ * Mail: envato.iglyphic@gmail.com
+ *
+ */
+
+/* -------------------------------------
+   TABLE OF CONTENTS
+
+    01. Google Font
+    02. General  Styles
+    03. section background helper class
+    04. Loading Screen
+    05. Header
+    06. Our Services
+    07. Our Insurance
+    08. Insurance Portfolio Single
+    09. latest news
+    10. Testimonial
+    11. Page Title
+    12. Our Agent
+    13. Pages
+    14. SideBar
+    15. Index main service
+    16. footer
+    17. index three service
+    18. index three quick contact
+    19. index three footer
+    20. get quote popup
+    21. Agent single
+    22. Insurance coverage styling
+    23. About Feature Boxes
+    24. Coming soon
+    25. Shortcode - Style A pricing Table
+    26. Faq
+    27. New home page
+
+----------------------------------------------*/
+
+
+/* -------------------------------------------
+   1. Google Font
+----------------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700);
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200);
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:900,700,600,500,400);
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500,700,300);
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,600,300,800);
+
+
+
+
+/* -------------------------------------------
+   02. General  Styles
+----------------------------------------------*/
+
+
+
+.memberinput {
+
+    padding-top: 10px!important;
+    font-size: 13px!important;
+    
+}
+
+.docs-viewth{
+    color: white;
+    width:200px!important;
+    background-color: rgb(54, 127, 169);
+}
+.docs-viewaction{
+     color: white;
+    width:100px!important;
+    background-color: rgb(54, 127, 169);
+}
+.docs-verify{
+     color: white;
+    width:100px!important;
+    background-color: rgb(54, 127, 169);
+}
+.createcheckdiv1{
+padding-top: 5px!important;
+    }
+
+    .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+  font-size: 14px!important;
+  
+} 
+.size{
+    font-size: .8rem !important;
+    height: 30px !important;
+}
+.not-verify{
+    color: black!important;
+}
+.createpolicy-bank{
+    font-size: 15px !important;
+}
+}
