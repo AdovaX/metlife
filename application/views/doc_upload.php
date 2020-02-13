@@ -1,4 +1,6 @@
-  <section id="Why_Us">
+
+
+        <section id="Why_Us">
             <div class="container inner">
                 <div class="row">
                     <ul class="checkout-bar progress_bar">

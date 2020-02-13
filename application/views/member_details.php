@@ -221,9 +221,14 @@ $t="relation";
 $t=config_item($t);
 $c=asort($t);
 foreach($t as $key=>$value){
-echo "<option value=".$key.">". $value ."</option>";
-if ($no_relation<=0)
+
+if ($no_relation<=0){
+	echo "<option value=".$key.">". $value ."</option>";
 break;
+}
+else{
+	echo "<option value=".$key.">". $value ."</option>";
+}
 }
 ?>
 </select>
@@ -754,6 +759,6 @@ if (localStorage.weight)
 
 <script type="text/javascript">
 	$(document).ready(function(){
-		// $('.reset_btn').trigger('click');
+		  $('.reset_btn').trigger('click');
 	});
 </script>

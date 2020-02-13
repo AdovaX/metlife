@@ -7,6 +7,21 @@ $this->db->insert('osp_employee_details', $data);
  return $this->db->insert_id();
 
 }
+function duplicate_passport($passport_number){
+ $this->db->select('member_id');
+    $this->db->from('osp_employee_details');
+    $this->db->where('pp_num' , $passport_number);
+    $query = $this->db->get();
+    return $query->num_rows();
+}
+function duplicate_applicant($relationship,$member_id){
+ $this->db->select('member_id');
+    $this->db->from('osp_employee_details');
+    $this->db->where('relationship_to_policy_holder' , $relationship);
+    $this->db->where('policy_holder_id' , $member_id);
+    $query = $this->db->get();
+    return $query->num_rows();
+}
 
 function get_data($id){
 

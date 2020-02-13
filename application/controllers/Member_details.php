@@ -245,13 +245,18 @@ class Member_details extends CI_Controller {
 
 			$this->session->set_flashdata('member', $member_first_name);
 
-				$new_member_id=$this->Member_details_model->form_insert($data);
-
-
-               // $duplicate_user=$this->Member_details_model->duplicate_user($data);
 
 
 
+                $duplicate_passport=$this->Member_details_model->duplicate_passport($this->input->post('passport_number'));
+
+                $duplicate_applicant=$this->Member_details_model->duplicate_applicant($this->input->post('relationship_to_policy_holder'));
+
+                if ($duplicate_passport>0 OR $duplicate_applicant >1) {
+                 redirect ( base_url().'Doc_upload');
+                }else{
+                 $new_member_id=$this->Member_details_model->form_insert($data);
+                }
 
 
 				$this->load->model('Mandatory_questions_model');

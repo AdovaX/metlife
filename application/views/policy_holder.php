@@ -93,7 +93,7 @@ Policy Holder Mobile
 </div>
 <input value="<?php echo $policy_holder_mobile; ?>" type="text"
 class="form-control" id="policy_holder_mobile" name="policy_holder_mobile"
-placeholder="971-50-XXXXXXX" required data-toggle="tooltip"   title="Please enter the Policy Holder Mobile">
+placeholder="971-50-XXXXXXX" required data-toggle="tooltip" autocomplete="off"  title="Please enter the Policy Holder Mobile">
 </div>
 <?php echo form_error('policy_holder_mobile', '<div class="error_msg"><i style="color:red;">', '</i></div>'); ?>
 </div>
@@ -312,7 +312,7 @@ placeholder="" required data-toggle="tooltip"   title="Please enter the Policy H
         $('#policy_holder_uid_no').val( localStorage.policy_holder_uid_no );
         $('#policy_holder_address').val( localStorage.policy_holder_address );
 
-        //document.getElementById("policy_holder_form").reset();
+        document.getElementById("policy_holder_form").reset();
 
 
 
